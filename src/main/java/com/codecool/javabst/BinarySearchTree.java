@@ -66,7 +66,7 @@ public class BinarySearchTree {
         Node actualNode = this.actualNode;
         while (actualNode != null) {
             if (toRemove.equals(actualNode.getValue())) {
-                actualNode.setValue(null);
+                actualNode.setValue(null); // set its parent left/right to null!
             } else if (toRemove > actualNode.getValue()) {
                 if (toRemove.equals(actualNode.getRight().getValue())) {
                     actualNode.setRight(null);
